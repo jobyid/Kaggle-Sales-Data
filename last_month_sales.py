@@ -11,7 +11,7 @@ sub = pred_df[['ID','sum']]
 sub = sub.fillna(0)
 
 sub = sub['sum'].clip(lower=0, upper=20)
-subs = pd.read_csv('./competitive-data-science-predict-future-sales/sample_submission.csv')
+subs = pd.read_csv('competitive-data-science-predict-future-sales/submissions/sample_submission.csv')
 subs.item_cnt_month = sub.sum
 subs.to_csv('./competitive-data-science-predict-future-sales/last_month_submission.csv', index=False)
 print(sub.shape)

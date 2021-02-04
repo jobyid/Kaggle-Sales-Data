@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('./competitive-data-science-predict-future-sales/sample_submission.csv')
+df = pd.read_csv('competitive-data-science-predict-future-sales/submissions/sample_submission.csv')
 print(df.head())
 new_constant = 0.35
 current_constant = df.item_cnt_month.mean()
